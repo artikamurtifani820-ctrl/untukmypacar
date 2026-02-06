@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday My Madridista 🤍</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="kode.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+<audio id="music" src="images/himno_del_real_madrid.ogg"></audio>
+
+<div class="container">
+
+  <h1>🎉 Happy Birthday 🎉</h1>
+  <h2>My Madridista 🤍</h2>
+  <p class="name">Untuk: <span>Gress Satria Citra Widjaya</span></p>
+
+  <section class="message">
+    <h3>🤍 Pesan Spesial 🤍</h3>
+    <p id="typing"></p>
+  </section>
+
+  <p class="hint">👇🏼 Klik fotonya satu per satu, ada sesuatu</p>
+
+  <!-- GALLERY -->
+  <section class="gallery">
+    <div class="photo">
+      <img src="images/bola.jpeg" alt="Main bola">
+      <div class="photo-caption">deg-deg an banget liatnya, kaya waktu pas awal kenal🥶</div>
+    </div>
+
+    <div class="photo">
+      <img src="images/piala.jpeg" alt="Piala">
+      <div class="photo-caption">sama kaya di hati aku, selalu juara satuu😝</div>
+    </div>
+
+    <div class="photo special">
+      <span class="badge">06</span>
+      <img src="images/jersey.jpeg" alt="Jersey 06">
+      <div class="photo-caption">always senyum liat nomor punggung jersey ini, soalnya awal mula jadi kita🙆🏻‍♀️💗</div>
+    </div>
+
+    <div class="photo">
+      <img src="images/kue.jpeg" alt="Kue ulang tahun">
+      <div class="photo-caption">lucuu yaaa inii kaya hangat aja liatnyaa, selalu ajak aku foto kalau selesai main, hehe>< </div>
+    </div>
+
+    <div class="photo">
+      <img src="images/komuk.jpeg" alt="Ekspresi kamu">
+      <div class="photo-caption">selalu totalitas kalau udah soal yang kamu suka. Capek pun tetep dijalanin:3</div>
+    </div>
+
+    <div class="photo">
+      <img src="images/lapangan.jpeg" alt="Lapangan">
+      <div class="photo-caption">keliatan lucu dan bahagia sih, apa lagi yaaa kata-katanyaa, bingung😮‍💨</div>
+    </div>
+  </section>
+
+  <section class="cards">
+    <div class="card" data-message="15 kali juara Liga Champions! ⚽ Hala Madrid!">🏆 15 UCL</div>
+    <div class="card" data-message="Klub paling legendaris di dunia! 🏟️ Bernabéu vibes!">🤍 Real Madrid</div>
+    <div class="card" data-message="Semangat Madrid selalu bangkit! 💪 Jangan pernah menyerah!">⚽ Never Give Up</div>
+  </section>
+
+  <button onclick="surprise()">Klik untuk Kejutan 🤍</button>
+  <div id="surprisePhoto">
+    <img src="images/kejutan.jpeg" alt="Foto kejutan kita">
+    <p class="love-message">I ❤️ U Selamanya</p>
+      <p class="love-message">Hala Madrid ⚽🤍</p>
+  </div>
+</div>
+
+<!-- Popup Overlay -->
+<div id="popupOverlay">
+  <div id="popupContent">
+    <span id="closePopup">&times;</span>
+    <p id="popupMessage"></p>
+  </div>
+</div>
+
+<script src="teks.js"></script>
+</body>
+</html>
